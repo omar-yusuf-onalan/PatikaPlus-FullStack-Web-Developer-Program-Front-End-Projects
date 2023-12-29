@@ -1,0 +1,63 @@
+body {
+  background-color: gray;
+}
+
+h1 {
+  color: yellow;
+  font-style: italic;
+}
+
+p {
+  color: yellow;
+  margin-top: 40px;
+}
+
+span {
+  color: yellow;
+}
+
+li {
+  color: yellow;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#introduction {
+  font-style: italic;
+  font-weight: bold;
+}
+
+#content {
+  margin: 3rem auto;
+  width: 60%;
+}
+
+#content div {
+  padding: 10px;
+}
+
+#title {
+  margin-left: 3rem;
+}
+
+.heading {
+  color: yellow;
+  font-weight: bold;
+  border-radius: 1rem;
+}
+
+.info {
+  display: inline-block;
+  text-decoration: underline;
+  padding: 5px;
+}
+
+.steps {
+  color: yellow;
+}
+.BonAppetit {
+  font-size: 45px;
+  float: right;
+  margin-right: 150px;
+  font-family: "Times New Roman", Times, serif;
+}
