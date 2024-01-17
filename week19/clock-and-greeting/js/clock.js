@@ -7,22 +7,17 @@ if (username)
 
 
 function updateClock() {
-    var now = new Date();
-    var hours = now.getHours();
-    var minutes = now.getMinutes();
-    var seconds = now.getSeconds();
-    var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    var day = daysOfWeek[now.getDay()];
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+    const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const day = daysOfWeek[now.getDay()];
 
-    hours = hours < 10 ? "0" + hours : hours;
-    minutes = minutes < 10 ? "0" + minutes : minutes;
-    seconds = seconds < 10 ? "0" + seconds : seconds;
+    const timeString = `${hours}:${minutes}:${seconds}`;
+    const dateString = `${day}, ${now.getMonth() + 1}/${now.getDate()}/${now.getFullYear()}`;
 
-    var timeString = hours + ":" + minutes + ":" + seconds;
-    var dateString = day + ", " + (now.getMonth() + 1) + "/" + now.getDate() + "/" + now.getFullYear();
-
-    document.querySelector("#myClock").innerHTML = timeString + " | " + dateString;
-
+    document.querySelector("#myClock").innerHTML = `${timeString} | ${dateString}`;
 }
 
 setInterval(updateClock, 1000);
