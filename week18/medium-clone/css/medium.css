@@ -1,0 +1,17 @@
+/* general configuration start */
+body {
+    font-family: 'PT Serif', serif;
+}
+
+h1 {
+    font-size: 5em;
+}
+/* general configuration end */
+
+.bg-yellow {
+    background-color: #FFC017;
+}
+
+.border-bottom-dark {
+    border-bottom: 1px solid rgba(41, 41, 41, 1);
+}
