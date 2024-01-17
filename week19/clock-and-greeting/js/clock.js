@@ -3,9 +3,6 @@ let username = prompt("Enter name");
 if (username)
     document.querySelector("#myName").innerHTML = username
 
-
-
-
 function updateClock() {
     const now = new Date();
     const hours = now.getHours().toString().padStart(2, '0');
